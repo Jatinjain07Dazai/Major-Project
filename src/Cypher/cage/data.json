@@ -1,0 +1,90 @@
+{
+    "Analytics and Tracking": [
+        "Segment",
+        "Google Analytics",
+        "Google Universal Analytics",
+        "Facebook Pixel",
+        "Facebook Conversion Tracking",
+        "Global Site Tag",
+        "Google Conversion Tracking",
+        "Google AdWords Conversion",
+        "LinkedIn Insights",
+        "Facebook Signal"
+    ],
+    "Widgets": [
+        "Apple Whitelist",
+        "Periodic",
+        "GitHub Buttons",
+        "Twitter Follow Button",
+        "Font Awesome",
+        "Google Font API",
+        "Quora",
+        "Google Tag Manager",
+        "US Privacy User Signal Mechanism",
+        "CrUX Dataset",
+        "CrUX Top 5m",
+        "Cloudflare Radar",
+        "Cloudflare Radar Top 500k",
+        "Global Privacy Control"
+    ],
+    "Mobile": [
+        "Apple Mobile Web Clips Icon",
+        "Viewport Meta",
+        "IPhone / Mobile Compatible"
+    ],
+    "Content Delivery Network": [
+        "Content Delivery Network"
+    ],
+    "JavaScript Libraries and Functions": [
+        "Twitter Platform",
+        "Facebook SDK",
+        "Facebook for Websites",
+        "es6 promise",
+        "Intersection Observer"
+    ],
+    "Advertising": [
+        "Refersion",
+        "DoubleClick.Net",
+        "LinkedIn Ads",
+        "Facebook Custom Audiences",
+        "Google Remarketing"
+    ],
+    "Verified Link": [
+        "Facebook",
+        "LinkedIn",
+        "Twitter",
+        "GitHub"
+    ],
+    "Name Server": [
+        "Amazon Route 53"
+    ],
+    "Email Hosting Providers": [
+        "Google Apps for Business"
+    ],
+    "Web Hosting Providers": [
+        "Amazon",
+        "Amazon Virginia Region"
+    ],
+    "SSL Certificates": [
+        "SSL by Default",
+        "Amazon SSL"
+    ],
+    "Verified CDN": [
+        "Amazon CloudFront",
+        "AWS Cloudfront Stockholm Edge",
+        "AWS Cloudfront Sydney Edge",
+        "AWS Cloudfront Seattle WA Edge",
+        "AWS Cloudfront Miami FL Edge",
+        "AWS Cloudfront Los Angeles CA Edge",
+        "AWS Cloudfront Perth Edge",
+        "AWS Cloudfront Taipei TW Edge",
+        "Amazon S3 CDN"
+    ],
+    "Web Master Registration": [
+        "Google Webmaster"
+    ],
+    "Profile Details": [],
+    "null": [],
+    "Recent Lookups": [],
+    "Suggest a Technology": []
+}

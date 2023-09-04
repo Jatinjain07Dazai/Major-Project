@@ -1,0 +1,18 @@
+{% extends 'base.html' %} 
+{% block content %}
+<section id="res">
+<h1 style="text-align: center;"> {{ url }} </h1>
+<div class="info-cont">
+{% for k, v in data.items %}
+	<div class="info-card">
+	 <h2>{{ k }}</h2>
+	 <ul>
+	 	{% for i in v %}
+	 	<li> {{ i }} </li>
+	 	{% endfor %}
+	 </ul>
+	</div>
+{% endfor %}
+</div>
+</section>
+{% endblock %}
