@@ -1,89 +1,64 @@
 {
     "Analytics and Tracking": [
-        "Segment",
+        "Cirrus Insight",
+        "Global Site Tag",
         "Google Analytics",
         "Google Universal Analytics",
-        "Facebook Pixel",
-        "Facebook Conversion Tracking",
-        "Global Site Tag",
-        "Google Conversion Tracking",
-        "Google AdWords Conversion",
-        "LinkedIn Insights",
-        "Facebook Signal"
+        "Google Analytics Event Tracking",
+        "Fastly"
     ],
     "Widgets": [
-        "Apple Whitelist",
-        "Periodic",
-        "GitHub Buttons",
-        "Twitter Follow Button",
-        "Font Awesome",
-        "Google Font API",
-        "Quora",
         "Google Tag Manager",
-        "US Privacy User Signal Mechanism",
-        "CrUX Dataset",
-        "CrUX Top 5m",
-        "Cloudflare Radar",
-        "Cloudflare Radar Top 500k",
-        "Global Privacy Control"
+        "GitHub Buttons Official"
     ],
     "Mobile": [
-        "Apple Mobile Web Clips Icon",
         "Viewport Meta",
         "IPhone / Mobile Compatible"
     ],
     "Content Delivery Network": [
-        "Content Delivery Network"
+        "Amazon S3",
+        "Cloudflare"
     ],
-    "JavaScript Libraries and Functions": [
-        "Twitter Platform",
-        "Facebook SDK",
-        "Facebook for Websites",
-        "es6 promise",
-        "Intersection Observer"
-    ],
-    "Advertising": [
-        "Refersion",
-        "DoubleClick.Net",
-        "LinkedIn Ads",
-        "Facebook Custom Audiences",
-        "Google Remarketing"
-    ],
+    "JavaScript Libraries and Functions": [],
     "Verified Link": [
+        "GitHub",
         "Facebook",
-        "LinkedIn",
         "Twitter",
-        "GitHub"
-    ],
-    "Name Server": [
-        "Amazon Route 53"
-    ],
-    "Email Hosting Providers": [
-        "Google Apps for Business"
-    ],
-    "Web Hosting Providers": [
-        "Amazon",
-        "Amazon Virginia Region"
+        "LinkedIn"
     ],
     "SSL Certificates": [
-        "SSL by Default",
-        "Amazon SSL"
+        "HSTS"
+    ],
+    "Operating Systems and Servers": [
+        "GitHub Hosting"
+    ],
+    "Web Servers": [
+        "Varnish"
+    ],
+    "Document Encoding": [
+        "UTF-8"
+    ],
+    "Document Standards": [
+        "HTML5 DocType",
+        "Meta Description",
+        "Open Graph Protocol",
+        "Canonical Content Tag",
+        "Javascript",
+        "Cascading Style Sheets",
+        "HTML 5 Specific Tags",
+        "WAI-ARIA",
+        "CORS",
+        "Strict Transport Security",
+        "Content Security Policy",
+        "Referrer Policy",
+        "Content Type Options",
+        "X-Frame-Options"
     ],
     "Verified CDN": [
-        "Amazon CloudFront",
-        "AWS Cloudfront Stockholm Edge",
-        "AWS Cloudfront Sydney Edge",
-        "AWS Cloudfront Seattle WA Edge",
-        "AWS Cloudfront Miami FL Edge",
-        "AWS Cloudfront Los Angeles CA Edge",
-        "AWS Cloudfront Perth Edge",
-        "AWS Cloudfront Taipei TW Edge",
-        "Amazon S3 CDN"
-    ],
-    "Web Master Registration": [
-        "Google Webmaster"
+        "Cloudflare CDN"
     ],
     "Profile Details": [],
+    "BuiltWith Top Site Rank": [],
     "null": [],
     "Recent Lookups": [],
     "Suggest a Technology": []

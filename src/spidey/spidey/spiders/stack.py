@@ -8,6 +8,11 @@ class StackSpider(scrapy.Spider):
     allowed_domains = ["builtwith.com"]
     start_urls = ["https://builtwith.com/", "https://builtwith.com/?https%3a%2f%2fscrapy.org%2f"]
 
+    def __init__(self, urls=[], *args, **kwargs):
+        self.start_urls = urls.split(',')
+        super(StackSpider, self).__init__(*args, **kwargs)
+
+
     def parse(self, response):
         cards = response.css(".card")
         data  = {}
@@ -19,5 +24,5 @@ class StackSpider(scrapy.Spider):
             print(data)
             json.dump(data, f, indent = 4)
 
-        
+        yield scrapy.Request()
 

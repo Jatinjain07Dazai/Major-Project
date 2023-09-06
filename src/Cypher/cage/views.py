@@ -9,7 +9,7 @@ def Landing(request):
 def result(request):
 	url = request.GET['text']
 	os.chdir(os.getcwd()+ "/../spidey/")
-	os.system("scrapy crawl stack")
+	os.system("scrapy crawl stack -a " + "urls=https://builtwith.com/?https%3a%2f%2f" + url[8:])
 	with open("./../Cypher/cage/data.json", "r") as f:
 		data = json.load(f)
-	return render(request, "result.html", { "data" : data, "url" : url[4:] })
+	return render(request, "result.html", { "data" : data, "url" : url })
