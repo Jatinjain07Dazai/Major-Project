@@ -12,7 +12,10 @@ cryptography==41.0.3
 cssselect==1.2.0
 decorator==5.1.1
 Django==4.2.4
+django-compat==1.0.15
+dnspython==1.16.0
 executing==1.2.0
+fierce==1.5.0
 filelock==3.12.2
 hyperlink==21.0.0
 idna==3.4
@@ -37,6 +40,7 @@ pycparser==2.21
 PyDispatcher==2.0.7
 Pygments==2.16.1
 pyOpenSSL==23.2.0
+python-nmap==0.7.1
 queuelib==1.6.2
 requests==2.31.0
 requests-file==1.5.1
@@ -54,4 +58,5 @@ tzdata==2023.3
 urllib3==2.0.4
 w3lib==2.1.2
 wcwidth==0.2.6
+win-unicode-console==0.5
 zope.interface==6.0
