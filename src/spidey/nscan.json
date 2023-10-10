@@ -1,0 +1,162 @@
+{
+    "172.66.43.71": {
+        "hostnames": [
+            {
+                "name": "www.codewars.com",
+                "type": "user"
+            }
+        ],
+        "addresses": {
+            "ipv4": "172.66.43.71"
+        },
+        "vendor": {},
+        "status": {
+            "state": "up",
+            "reason": "syn-ack"
+        },
+        "tcp": {
+            "80": {
+                "state": "open",
+                "reason": "syn-ack",
+                "name": "http",
+                "product": "Cloudflare http proxy",
+                "version": "",
+                "extrainfo": "",
+                "conf": "10",
+                "cpe": "",
+                "script": {
+                    "http-server-header": "cloudflare",
+                    "http-title": "Did not follow redirect to https://www.codewars.com/",
+                    "http-methods": "\n  Supported Methods: GET HEAD POST"
+                }
+            },
+            "443": {
+                "state": "open",
+                "reason": "syn-ack",
+                "name": "http",
+                "product": "Cloudflare http proxy",
+                "version": "",
+                "extrainfo": "",
+                "conf": "10",
+                "cpe": "",
+                "script": {
+                    "ssl-cert": "Subject: commonName=codewars.com/organizationName=Cloudflare, Inc./stateOrProvinceName=California/countryName=US\nSubject Alternative Name: DNS:codewars.com, DNS:*.codewars.com\nIssuer: commonName=Cloudflare Inc ECC CA-3/organizationName=Cloudflare, Inc./countryName=US\nPublic Key type: ec\nPublic Key bits: 256\nSignature Algorithm: ecdsa-with-SHA256\nNot valid before: 2023-05-04T00:00:00\nNot valid after:  2024-05-03T23:59:59\nMD5:   5b83:80af:6541:d0f0:7746:99f5:2c91:fb8d\nSHA-1: fe40:8036:9988:32b1:bff8:7912:e5ad:929f:fec9:4ff3",
+                    "http-server-header": "cloudflare",
+                    "http-robots.txt": "1 disallowed entry \n/cgi-bin/\\x0B",
+                    "http-favicon": "Unknown favicon MD5: BD5CC1C26BB4A86F24DE65464883065D",
+                    "http-title": "406 Not Acceptable",
+                    "http-methods": "\n  Supported Methods: GET HEAD POST OPTIONS"
+                }
+            }
+        },
+        "portused": [
+            {
+                "state": "open",
+                "proto": "tcp",
+                "portid": "80"
+            }
+        ],
+        "osmatch": [
+            {
+                "name": "Nokia E70 or N86 mobile phone (Symbian OS)",
+                "accuracy": "90",
+                "line": "89372",
+                "osclass": [
+                    {
+                        "type": "phone",
+                        "vendor": "Nokia",
+                        "osfamily": "Symbian OS",
+                        "osgen": null,
+                        "accuracy": "90",
+                        "cpe": [
+                            "cpe:/o:nokia:symbian_os"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Tomato 1.27 - 1.28 (Linux 2.4.20)",
+                "accuracy": "88",
+                "line": "46899",
+                "osclass": [
+                    {
+                        "type": "WAP",
+                        "vendor": "Linux",
+                        "osfamily": "Linux",
+                        "osgen": "2.4.X",
+                        "accuracy": "88",
+                        "cpe": [
+                            "cpe:/o:linux:linux_kernel:2.4.20"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Linux 3.2.0",
+                "accuracy": "88",
+                "line": "65343",
+                "osclass": [
+                    {
+                        "type": "general purpose",
+                        "vendor": "Linux",
+                        "osfamily": "Linux",
+                        "osgen": "3.X",
+                        "accuracy": "88",
+                        "cpe": [
+                            "cpe:/o:linux:linux_kernel:3.2.0"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "MikroTik RouterOS 6.15 (Linux 3.3.5)",
+                "accuracy": "88",
+                "line": "85802",
+                "osclass": [
+                    {
+                        "type": "router",
+                        "vendor": "MikroTik",
+                        "osfamily": "RouterOS",
+                        "osgen": "6.X",
+                        "accuracy": "88",
+                        "cpe": [
+                            "cpe:/o:mikrotik:routeros:6.15"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Netgear ReadyNAS Duo NAS device (RAIDiator 4.1.4)",
+                "accuracy": "86",
+                "line": "88564",
+                "osclass": [
+                    {
+                        "type": "storage-misc",
+                        "vendor": "Netgear",
+                        "osfamily": "RAIDiator",
+                        "osgen": "4.X",
+                        "accuracy": "86",
+                        "cpe": [
+                            "cpe:/o:netgear:raidiator:4.1.4"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Microsoft Xbox game console (modified, running XboxMediaCenter)",
+                "accuracy": "86",
+                "line": "69092",
+                "osclass": [
+                    {
+                        "type": "game console",
+                        "vendor": "Microsoft",
+                        "osfamily": "embedded",
+                        "osgen": null,
+                        "accuracy": "86",
+                        "cpe": []
+                    }
+                ]
+            }
+        ]
+    }
+}

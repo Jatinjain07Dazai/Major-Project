@@ -21,6 +21,8 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Landing, name='home'),
-    path('res/', result, name='res')
+    path('res/', result, name='res'),
+    path('res2/', result2, name='res2')
+
 
 ]

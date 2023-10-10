@@ -3,39 +3,24 @@
 {% block content %}
 <script type="text/javascript" src="{% static 'reser.js' %}" defer></script>
 <section id="res">
-<a href="/res2"> 
-<div id="network-page">
-Network Page
-</div>
-</a>
-
-
-<div class="wrap">
-   <div class="search">
-      <input type="text" class="searchTerm" placeholder="{{ url }}">
-      <button type="submit" class="searchButton">
-        SEARCH
-     </button>
- </div>
-</div>
 <div style="display:flex; ">
 <div style="display:block; margin: 5vw; margin-top:2vh">
 <h1 style="text-align:center; color: #222;"> Tech Stack </h1>
 <div class="info-cont" style="background: #fff;">
-{% for k, v in data.items %}
+{% for k, v in nres.items %}
 	<div class="info-card">
-	 <h2>{{ k }}</h2>
-	 <ul>
-	 	{% for i in v %}
-	 	<li style="font-size:.6rem; letter-spacing:.5em; "> {{ i }} </li>
+	{% if k in l %}
+	 	{% for i in l%}
+	 		{% for m, n in i.items %}
+	 		<h3>m :: n</h3>
+	 		{% endfor %}
 	 	{% endfor %}
-	 </ul>
+	{% endif %}
 	</div>
 {% endfor %}
 </div>
 </div>
 </div>
-
 
 </section>
 {% endblock %}

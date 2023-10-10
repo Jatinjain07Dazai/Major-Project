@@ -1,0 +1,88 @@
+{
+    "nmap": {
+        "command_line": "nmap -oX - -p 1-1024 -v -sS -sV -sC -A -O theuselessweb.com",
+        "scaninfo": {
+            "tcp": {
+                "method": "syn",
+                "services": "1-1024"
+            }
+        },
+        "scanstats": {
+            "timestr": "Thu Sep 28 14:02:11 2023",
+            "elapsed": "151.14",
+            "uphosts": "1",
+            "downhosts": "0",
+            "totalhosts": "1"
+        }
+    },
+    "scan": {
+        "18.139.194.139": {
+            "hostnames": [
+                {
+                    "name": "theuselessweb.com",
+                    "type": "user"
+                },
+                {
+                    "name": "ec2-18-139-194-139.ap-southeast-1.compute.amazonaws.com",
+                    "type": "PTR"
+                }
+            ],
+            "addresses": {
+                "ipv4": "18.139.194.139"
+            },
+            "vendor": {},
+            "status": {
+                "state": "up",
+                "reason": "syn-ack"
+            },
+            "uptime": {
+                "seconds": "24",
+                "lastboot": "Thu Sep 28 14:01:47 2023"
+            },
+            "tcp": {
+                "80": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "http",
+                    "product": "Netlify",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "",
+                    "script": {
+                        "fingerprint-strings": "\n  FourOhFourRequest: \n    HTTP/1.0 400 Bad Request\n    Date: Thu, 28 Sep 2023 08:30:10 GMT\n    Server: Netlify\n    X-Nf-Request-Id: 01HBDEHRX3JKH31WX36PC1ZP8B\n    Content-Length: 0\n  GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: \n    HTTP/1.1 400 Bad Request\n    Content-Type: text/plain; charset=utf-8\n    Connection: close\n    Request\n  GetRequest: \n    HTTP/1.0 400 Bad Request\n    Date: Thu, 28 Sep 2023 08:30:02 GMT\n    Server: Netlify\n    X-Nf-Request-Id: 01HBDEHH2NJ67SS6P2789GDWAF\n    Content-Length: 0\n  HTTPOptions: \n    HTTP/1.0 400 Bad Request\n    Date: Thu, 28 Sep 2023 08:30:02 GMT\n    Server: Netlify\n    X-Nf-Request-Id: 01HBDEHHHGNJ80C87SC6NNND21\n    Content-Length: 0",
+                        "http-server-header": "Netlify",
+                        "http-methods": "\n  Supported Methods: GET HEAD POST OPTIONS",
+                        "http-title": "Did not follow redirect to https://theuselessweb.com/"
+                    }
+                },
+                "443": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "https",
+                    "product": "Netlify",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "",
+                    "script": {
+                        "fingerprint-strings": "\n  FourOhFourRequest: \n    HTTP/1.0 400 Bad Request\n    Date: Thu, 28 Sep 2023 08:30:11 GMT\n    Server: Netlify\n    X-Nf-Request-Id: 01HBDEHT05Q5H7HB7F99W59DK0\n    Content-Length: 0\n  GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: \n    HTTP/1.1 400 Bad Request\n    Content-Type: text/plain; charset=utf-8\n    Connection: close\n    Request\n  GetRequest: \n    HTTP/1.0 400 Bad Request\n    Date: Thu, 28 Sep 2023 08:30:09 GMT\n    Server: Netlify\n    X-Nf-Request-Id: 01HBDEHR259GN0GXX9T75ATSA4\n    Content-Length: 0\n  HTTPOptions: \n    HTTP/1.0 400 Bad Request\n    Date: Thu, 28 Sep 2023 08:30:10 GMT\n    Server: Netlify\n    X-Nf-Request-Id: 01HBDEHSDERY166V0B9RSCNBJZ\n    Content-Length: 0",
+                        "ssl-cert": "Subject: commonName=*.theuselessweb.com\nSubject Alternative Name: DNS:*.theuselessweb.com, DNS:theuselessweb.com\nIssuer: commonName=R3/organizationName=Let's Encrypt/countryName=US\nPublic Key type: ec\nPublic Key bits: 256\nSignature Algorithm: sha256WithRSAEncryption\nNot valid before: 2023-09-10T12:12:41\nNot valid after:  2023-12-09T12:12:40\nMD5:   ae2d:573e:1f94:7a52:c68e:5a59:bfcf:31e1\nSHA-1: 5e5b:04e4:2bd4:5397:2b22:cb3a:eeb3:6a0f:52dc:62a9",
+                        "http-title": "The Useless Web",
+                        "http-server-header": "Netlify",
+                        "http-methods": "\n  Supported Methods: GET HEAD POST OPTIONS",
+                        "http-favicon": "Unknown favicon MD5: 9697A835F501DB29A58A3BC2801E34F3"
+                    }
+                }
+            },
+            "portused": [
+                {
+                    "state": "open",
+                    "proto": "tcp",
+                    "portid": "80"
+                }
+            ],
+            "osmatch": []
+        }
+    }
+}

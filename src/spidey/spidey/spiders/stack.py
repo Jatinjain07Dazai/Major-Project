@@ -20,6 +20,11 @@ class StackSpider(scrapy.Spider):
             data[i.css("h6::text").get()] = i.css(".text-dark::text").getall()
 
         
+        data.pop('Profile Details')
+        data.pop('Recent Lookups')
+        data.pop('Suggest a Technology')
+        data.pop(None)    
+
         with open('D:/college/7th Semester/Major Project/Spector/src/Cypher/cage/data.json', "w") as f:
             print(data)
             json.dump(data, f, indent = 4)
