@@ -3,6 +3,7 @@ asttokens==2.2.1
 attrs==23.1.0
 Automat==22.10.0
 backcall==0.2.0
+beautifulsoup4==4.12.2
 certifi==2023.7.22
 cffi==1.15.1
 charset-normalizer==3.2.0
@@ -12,6 +13,7 @@ cryptography==41.0.3
 cssselect==1.2.0
 decorator==5.1.1
 Django==4.2.4
+django-bootstrap-v5==1.0.11
 django-compat==1.0.15
 dnspython==1.16.0
 executing==1.2.0
@@ -47,6 +49,7 @@ requests-file==1.5.1
 Scrapy==2.10.0
 service-identity==23.1.0
 six==1.16.0
+soupsieve==2.5
 sqlparse==0.4.4
 stack-data==0.6.2
 tldextract==3.4.4
