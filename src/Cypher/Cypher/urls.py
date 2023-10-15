@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Landing, name='home'),
     path('res/', result, name='res'),
-    path('res2/', result2, name='res2')
-
-
+    path('res2/', result2, name='res2'),
+    path('va/', vulnrecord, name='vag'), 
+    path('sig/', signal, name='sig')
 ]

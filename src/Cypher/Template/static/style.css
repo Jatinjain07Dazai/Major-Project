@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -344,6 +346,7 @@ p{
 	justify-content: center;
 	margin-left: 85vw;
 	margin-top: 40px;
+	display: none;
 }
 
 
@@ -388,3 +391,7 @@ p{
   margin-left: 35vw;
   margin-top: 10vh;
   }
+
+
+
+  

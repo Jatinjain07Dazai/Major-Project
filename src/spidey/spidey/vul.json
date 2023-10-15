@@ -1,0 +1,164 @@
+{
+    "v": [
+        {
+            "CODE": "CVE-2023-44467",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-44467",
+            "Description": "langchain_experimental 0.0.14 allows an attacker to bypass the CVE-2023-36258 fix and execute arbitrary code via the PALChain in the python exec method.",
+            "Date": "October 09, 2023; 4:15:10 PM -0400",
+            "severity_3": "9.8 CRITICAL",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-38703",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-38703",
+            "Description": "PJSIP is a free and open source multimedia communication library written in C with high level API in C, C++, Java, C#, and Python languages. SRTP is a higher level media transport which is stacked upon a lower level media transport such as UDP and ICE. Currently a higher level transport is not synchronized with its lower level transport that may introduce use-after-free issue. This vulnerability affects applications that have SRTP capability (`PJMEDIA_HAS_SRTP` is set) and use underlying media transport other than UDP. This vulnerability\u2019s impact may range from unexpected application termination to control flow hijack/memory corruption. The patch is available as a commit in the master branch.\n",
+            "Date": "October 06, 2023; 10:15:12 AM -0400",
+            "severity_3": "9.8 CRITICAL",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-4570",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-4570",
+            "Description": "An improper access restriction in NI MeasurementLink Python services could allow an attacker on an adjacent network to reach services exposed on localhost.  These services were previously thought to be unreachable outside of the node.  This affects measurement plug-ins written in Python using version 1.1.0 of the ni-measurementlink-service\u00a0Python package and all previous versions.\n",
+            "Date": "October 05, 2023; 12:15:12 PM -0400",
+            "severity_3": "8.8 HIGH",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-43804",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-43804",
+            "Description": "urllib3 is a user-friendly HTTP client library for Python. urllib3 doesn't treat the `Cookie` HTTP header special or provide any helpers for managing cookies over HTTP, that is the responsibility of the user. However, it is possible for a user to specify a `Cookie` header and unknowingly leak information via HTTP redirects to a different origin if that user doesn't disable redirects explicitly. This issue has been patched in urllib3 version 1.26.17 or 2.0.5.",
+            "Date": "October 04, 2023; 1:15:10 PM -0400",
+            "severity_3": "8.1 HIGH",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-3361",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-3361",
+            "Description": "A flaw was found in Red Hat OpenShift Data Science. When exporting a pipeline from the Elyra notebook pipeline editor as Python DSL or YAML, it reads S3 credentials from the cluster (ds pipeline server) and saves them in plain text in the generated output instead of an ID for a Kubernetes secret.",
+            "Date": "October 04, 2023; 8:15:10 AM -0400",
+            "severity_3": "7.5 HIGH",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-26145",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-26145",
+            "Description": "This affects versions of the package pydash before 6.0.0. A number of pydash methods such as pydash.objects.invoke() and pydash.collections.invoke_map() accept dotted paths (Deep Path Strings) to target a nested Python object, relative to the original source object. These paths can be used to target internal class attributes and dict items, to retrieve, modify or invoke nested Python objects.\r\r**Note:**\r\rThe pydash.objects.invoke() method is vulnerable to Command Injection when the following prerequisites are satisfied:\r\r1) The source object (argument 1) is not a built-in object such as list/dict (otherwise, the __init__.__globals__ path is not accessible)\r\r2) The attacker has control over argument 2 (the path string) and argument 3 (the argument to pass to the invoked method)\r\r\rThe pydash.collections.invoke_map() method is also vulnerable, but is harder to exploit as the attacker does not have direct control over the argument to be passed to the invoked function.",
+            "Date": "September 28, 2023; 1:15:45 AM -0400",
+            "severity_3": "8.1 HIGH",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-42460",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-42460",
+            "Description": "Vyper is a Pythonic Smart Contract Language for the EVM. The `_abi_decode()` function does not validate input when it is nested in an expression. Uses of `_abi_decode()` can be constructed which allow for bounds checking to be bypassed resulting in incorrect results. This issue has not yet been fixed, but a fix is expected in release `0.3.10`. Users are advised to reference pull request #3626.",
+            "Date": "September 27, 2023; 11:19:32 AM -0400",
+            "severity_3": "7.5 HIGH",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-40581",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-40581",
+            "Description": "yt-dlp is a youtube-dl fork with additional features and fixes. yt-dlp allows the user to provide shell command lines to be executed at various stages in its download steps through the `--exec` flag. This flag allows output template expansion in its argument, so that metadata values may be used in the shell commands. The metadata fields can be combined with the `%q` conversion, which is intended to quote/escape these values so they can be safely passed to the shell. However, the escaping used for `cmd` (the shell used by Python's `subprocess` on Windows) does not properly escape special characters, which can allow for remote code execution if `--exec` is used directly with maliciously crafted remote data. This vulnerability only impacts `yt-dlp` on Windows, and the vulnerability is present regardless of whether `yt-dlp` is run from `cmd` or from `PowerShell`. Support for output template expansion in `--exec`, along with this vulnerable behavior, was added to `yt-dlp` in version 2021.04.11. yt-dlp version 2023.09.24 fixes this issue by properly escaping each special character. `\\n` will be replaced by `\\r` as no way of escaping it has been found. It is recommended to upgrade yt-dlp to version 2023.09.24 as soon as possible. Also, always be careful when using --exec, because while this specific vulnerability has been patched, using unvalidated input in shell commands is inherently dangerous. For Windows users who are not able to upgrade: 1. Avoid using any output template expansion in --exec other than {} (filepath). 2. If expansion in --exec is needed, verify the fields you are using do not contain \", | or &. 3. Instead of using --exec, write the info json and load the fields from it instead.\n",
+            "Date": "September 25, 2023; 3:15:09 PM -0400",
+            "severity_3": "7.8 HIGH",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2019-19450",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2019-19450",
+            "Description": "paraparser in ReportLab before 3.5.31 allows remote code execution because start_unichar in paraparser.py evaluates untrusted user input in a unichar element in a crafted XML document with '<unichar code=\"' followed by arbitrary Python code, a similar issue to CVE-2019-17626.",
+            "Date": "September 20, 2023; 10:15:12 AM -0400",
+            "severity_3": "9.8 CRITICAL",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-42443",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-42443",
+            "Description": "Vyper is a Pythonic Smart Contract Language for the Ethereum Virtual Machine (EVM). In version 0.3.9 and prior, under certain conditions, the memory used by the builtins `raw_call`, `create_from_blueprint` and `create_copy_of` can be corrupted. For `raw_call`, the argument buffer of the call can be corrupted, leading to incorrect `calldata` in the sub-context. For `create_from_blueprint` and `create_copy_of`, the buffer for the to-be-deployed bytecode can be corrupted, leading to deploying incorrect bytecode.\n\nEach builtin has conditions that must be fulfilled for the corruption to happen. For `raw_call`, the `data` argument of the builtin must be `msg.data` and the `value` or `gas` passed to the builtin must be some complex expression that results in writing to the memory. For `create_copy_of`, the `value` or `salt` passed to the builtin must be some complex expression that results in writing to the memory. For `create_from_blueprint`, either no constructor parameters should be passed to the builtin or `raw_args` should be set to True, and the `value` or `salt` passed to the builtin must be some complex expression that results in writing to the memory.\n\nAs of time of publication, no patched version exists. The issue is still being investigated, and there might be other cases where the corruption might happen. When the builtin is being called from an `internal` function `F`, the issue is not present provided that the function calling `F` wrote to memory before calling `F`. As a workaround, the complex expressions that are being passed as kwargs to the builtin should be cached in memory prior to the call to the builtin.",
+            "Date": "September 18, 2023; 5:16:13 PM -0400",
+            "severity_3": "8.1 HIGH",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-42441",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-42441",
+            "Description": "Vyper is a Pythonic Smart Contract Language for the Ethereum Virtual Machine (EVM). Starting in version 0.2.9 and prior to version 0.3.10, locks of the type `@nonreentrant(\"\")` or `@nonreentrant('')` do not produce reentrancy checks at runtime. This issue is fixed in version 0.3.10. As a workaround, ensure the lock name is a non-empty string.",
+            "Date": "September 18, 2023; 5:16:09 PM -0400",
+            "severity_3": "5.3 MEDIUM",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-4785",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-4785",
+            "Description": "Lack of error handling in the TCP server in Google's gRPC starting version 1.23 on posix-compatible platforms (ex. Linux) allows an attacker to cause a denial of service by initiating a significant number of connections with the server. Note that gRPC C++ Python, and Ruby are affected, but gRPC Java, and Go are NOT affected.\u00a0",
+            "Date": "September 13, 2023; 1:15:10 PM -0400",
+            "severity_3": "7.5 HIGH",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-41329",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-41329",
+            "Description": "WireMock is a tool for mocking HTTP services. The proxy mode of WireMock, can be protected by the network restrictions configuration, as documented in Preventing proxying to and recording from specific target addresses. These restrictions can be configured using the domain names, and in such a case the configuration is vulnerable to the DNS rebinding attacks. A similar patch was applied in WireMock 3.0.0-beta-15 for the WireMock Webhook Extensions. The root cause of the attack is a defect in the logic which allows for a race condition triggered by a DNS server whose address expires in between the initial validation and the outbound network request that might go to a domain that was supposed to be prohibited. Control over a DNS service is required to exploit this attack, so it has high execution complexity and limited impact. This issue has been addressed in version 2.35.1 of wiremock-jre8 and wiremock-jre8-standalone, version 3.0.3 of wiremock and wiremock-standalone, version 2.6.1 of the python version of wiremock, and versions 2.35.1-1 and 3.0.3-1 of the wiremock/wiremock Docker container. Users are advised to upgrade. Users unable to upgrade should either configure firewall rules to define the list of permitted destinations or to configure WireMock to use IP addresses instead of the domain names.",
+            "Date": "September 06, 2023; 5:15:14 PM -0400",
+            "severity_3": "6.6 MEDIUM",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-41328",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-41328",
+            "Description": "Frappe is a low code web framework written in Python and Javascript. A SQL Injection vulnerability has been identified in the Frappe Framework which could allow a malicious actor to access sensitive information. This issue has been addressed in versions 13.46.1 and 14.20.0. Users are advised to upgrade. There's no workaround to fix this without upgrading.",
+            "Date": "September 06, 2023; 2:15:09 PM -0400",
+            "severity_3": "7.5 HIGH",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-41319",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-41319",
+            "Description": "Fides is an open-source privacy engineering platform for managing the fulfillment of data privacy requests in a runtime environment, and the enforcement of privacy regulations in code. The Fides webserver API allows custom integrations to be uploaded as a ZIP file. This ZIP file must contain YAML files, but Fides can be configured to also accept the inclusion of custom Python code in it. The custom code is executed in a restricted, sandboxed environment, but the sandbox can be bypassed to execute any arbitrary code. The vulnerability allows the execution of arbitrary code on the target system within the context of the webserver python process owner on the webserver container, which by default is `root`, and leverage that access to attack underlying infrastructure and integrated systems. This vulnerability affects Fides versions `2.11.0` through `2.19.0`. Exploitation is limited to API clients with the `CONNECTOR_TEMPLATE_REGISTER` authorization scope. In the Fides Admin UI this scope is restricted to highly privileged users, specifically root users and users with the owner role.  Exploitation is only possible if the security configuration parameter `allow_custom_connector_functions` is enabled by the user deploying the Fides webserver container, either in `fides.toml` or by setting the env var `FIDES__SECURITY__ALLOW_CUSTOM_CONNECTOR_FUNCTIONS=True`. By default this configuration parameter is disabled. The vulnerability has been patched in Fides version `2.19.0`. Users are advised to upgrade to this version or later to secure their systems against this threat. Users unable to upgrade should ensure that `allow_custom_connector_functions` in `fides.toml` and the `FIDES__SECURITY__ALLOW_CUSTOM_CONNECTOR_FUNCTIONS` are both either unset or explicit set to `False`.",
+            "Date": "September 06, 2023; 2:15:08 PM -0400",
+            "severity_3": "7.2 HIGH",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-41050",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-41050",
+            "Description": "AccessControl provides a general security framework for use in Zope. Python's \"format\" functionality allows someone controlling the format string to \"read\" objects accessible (recursively) via attribute access and subscription from accessible objects. Those attribute accesses and subscriptions use Python's full blown `getattr` and `getitem`, not the policy restricted `AccessControl` variants `_getattr_` and `_getitem_`. This can lead to critical information disclosure. `AccessControl` already provides a safe variant for `str.format` and denies access to `string.Formatter`. However, `str.format_map` is still unsafe. Affected are all users who allow untrusted users to create `AccessControl` controlled Python code and execute it. A fix has been introduced in versions 4.4, 5.8 and 6.2. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+            "Date": "September 06, 2023; 2:15:08 PM -0400",
+            "severity_3": "7.7 HIGH",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-37941",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-37941",
+            "Description": "If an attacker gains write access to the Apache Superset metadata database, they could persist a specifically crafted Python object that may lead to remote code execution on Superset's web backend.\n\nThe Superset metadata db is an 'internal' component that is typically \nonly accessible directly by the system administrator and the superset \nprocess itself. Gaining access to that database should\n be difficult and require significant privileges.\n\nThis vulnerability impacts Apache Superset versions 1.5.0 up to and including 2.1.0. Users are recommended to upgrade to version 2.1.1 or later.\n\n",
+            "Date": "September 06, 2023; 10:15:10 AM -0400",
+            "severity_3": "6.6 MEDIUM",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-41052",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-41052",
+            "Description": "Vyper is a Pythonic Smart Contract Language. In affected versions the order of evaluation of the arguments of the builtin functions `uint256_addmod`, `uint256_mulmod`, `ecadd` and `ecmul` does not follow source order. This behaviour is problematic when the evaluation of one of the arguments produces side effects that other arguments depend on. A patch is currently being developed on pull request #3583. When using builtins from the list above, users should make sure that the arguments of the expression do not produce side effects or, if one does, that no other argument is dependent on those side effects.",
+            "Date": "September 04, 2023; 2:15:08 PM -0400",
+            "severity_3": "5.3 MEDIUM",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-40015",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-40015",
+            "Description": "Vyper is a Pythonic Smart Contract Language. For the following (probably non-exhaustive) list of expressions, the compiler evaluates the arguments from right to left instead of left to right. `unsafe_add, unsafe_sub, unsafe_mul, unsafe_div, pow_mod256, |, &, ^ (bitwise operators), bitwise_or (deprecated), bitwise_and (deprecated), bitwise_xor (deprecated), raw_call, <, >, <=, >=, ==, !=, in, not in (when lhs and rhs are enums)`. This behaviour becomes a problem when the evaluation of one of the arguments produces side effects that other arguments depend on. The following expressions can produce side-effect: state modifying external call , state modifying internal call, `raw_call`, `pop()` when used on a Dynamic Array stored in the storage, `create_minimal_proxy_to`, `create_copy_of`, `create_from_blueprint`. This issue has not yet been patched. Users are advised to make sure that the arguments of the expression do not produce side effects or, if one does, that no other argument is dependent on those side effects.",
+            "Date": "September 04, 2023; 2:15:07 PM -0400",
+            "severity_3": "5.3 MEDIUM",
+            "severity_2": null
+        },
+        {
+            "CODE": "CVE-2023-41040",
+            "LINK": "https://nvd.nist.gov/vuln/detail/CVE-2023-41040",
+            "Description": " GitPython is a python library used to interact with Git repositories. In order to resolve some git references, GitPython reads files from the `.git` directory, in some places the name of the file being read is provided by the user, GitPython doesn't check if this file is located outside the `.git` directory. This allows an attacker to make GitPython read any file from the system. This vulnerability is present in https://github.com/gitpython-developers/GitPython/blob/1c8310d7cae144f74a671cbe17e51f63a830adbf/git/refs/symbolic.py#L174-L175. That code joins the base directory with a user given string without checking if the final path is located outside the base directory. This vulnerability cannot be used to read the contents of files but could in theory be used to trigger a denial of service for the program. This issue has not yet been addressed.",
+            "Date": "August 30, 2023; 6:15:09 PM -0400",
+            "severity_3": "6.5 MEDIUM",
+            "severity_2": null
+        }
+    ]
+}

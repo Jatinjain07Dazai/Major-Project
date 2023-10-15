@@ -16,8 +16,12 @@ return colors;
 
 
 deck = document.querySelector(".info-cont");
+const link = document.querySelector("#network-page");
 var cards = deck.children;
 var color = color_box(cards);
 for(i=0; i < cards.length; i++){
     cards[i].style.backgroundColor = color[i];
 }
+
+
+

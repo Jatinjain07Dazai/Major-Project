@@ -17,13 +17,13 @@ class StackSpider(scrapy.Spider):
         cards = response.css(".card")
         data  = {}
         for i in cards:
-            data[i.css("h6::text").get()] = i.css(".text-dark::text").getall()
-
-        
+            data[i.css("h6::text").get()] = [ (i, j) for i, j in zip(i.css(".text-dark::text").getall(), i.css("p.pb-0::text, p.pb-1::text").getall())]
+            print(data)
         data.pop('Profile Details')
         data.pop('Recent Lookups')
         data.pop('Suggest a Technology')
         data.pop(None)    
+        print(data)
 
         with open('D:/college/7th Semester/Major Project/Spector/src/Cypher/cage/data.json', "w") as f:
             print(data)

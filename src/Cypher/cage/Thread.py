@@ -19,6 +19,8 @@ class Scanners(threading.Thread):
 			print("done")
 			with open('nscan.json', 'w') as f:
 				json.dump(k['scan'], f, indent=4)
-			print(url[4:])		
+				f.close()
+			os.system("findomain.exe -t" + str(url) + " -u sub.txt")
+
 		except Exception as e:
 			print(e)
