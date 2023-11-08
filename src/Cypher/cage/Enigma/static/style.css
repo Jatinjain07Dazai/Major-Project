@@ -1,0 +1,141 @@
+body {
+	background: var(--Fbg-white);
+	transition: 1s revert;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: black;
+	overflow: hidden;
+  }
+  
+  :root {
+	--Bbg-blue: #e89112;
+	--Bbg-black: #1E1E1E;
+	--Bfg-text: #3E3E42;
+	--Fbg-white: #edebf2;
+	--Ffg-text: #000000;
+  }
+  
+  .container {
+	width: 100vw;
+	height: 100vh;
+	background: var(--Bbg-black);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+  }
+  
+  h1 {
+	font-weight: 900;
+	font-size: 45px;
+	text-align: center;
+	margin-top: 20px;
+  }
+  
+  
+  .icons-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+  }
+  
+  .icon-left,
+  .icon-right {
+	position: absolute;
+	top: 0;
+  }
+  
+  .icon-left img{
+	height: 100px;
+  }
+  .icon-right img {
+	height: 70px;
+  }
+  
+  .icon-left {
+	left: 10px;
+  }
+  
+  .icon-right {
+	right: 10px;
+  }
+  
+  .h1-wrapper {
+	color: #e89112;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .dialog-box {
+  	display: none;
+	background: var(--Fbg-white);
+	border-radius: 10px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	max-width: 800px;
+	width: 100%;
+  }
+  
+  .question h2,
+  .answer h2 {
+	margin-bottom: 10px;
+  }
+  
+  .answer h2 {
+	margin-top: 20px;
+  }
+  
+  .bottom-section {
+	text-align: center;
+	margin-top: 10px;
+  }
+  
+  form {
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 5%;
+  }
+  
+  #search {
+	width: 600px;
+	height: 40px;
+	background: var(--Bbg-blue);
+	color: var(--Ffg-text);
+	margin-bottom: 20px;
+	border: 1px solid var(--Bbg-blue);
+	border-radius: 20px;
+	padding: 10px 20px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+  }
+  
+  label {
+	font-family: sans-serif;
+	font-size: 1.1em;
+	font-weight: 600;
+	color: var(--Bbg-blue);
+  }
+  
+  input[type="submit"].ask-button {
+	font-weight: bolder;
+	height: 60px;
+	width: 200px;
+	font-size: 1.2rem;
+	background: var(--Bbg-blue);
+	color: var(--Fbg-white);
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+
+  input[type="submit"].ask-button:hover {
+	background: #ff9900;
+	transform: scale(1.1);
+  }

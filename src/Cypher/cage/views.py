@@ -7,25 +7,32 @@ from asgiref.sync import sync_to_async
 from .Thread import Scanners
 from django.http import HttpResponse
 from .models import *
+from urllib.parse import urlparse
 
 def Landing(request):
 	return render(request, "index.html", {})
 
 
 def result(request):
-	start = time.time()
-	url = request.GET['text']
-	url = url[8:]
-	os.chdir(os.getcwd()+ "/../spidey/")
-	os.system("scrapy crawl stack -a " + "urls=https://builtwith.com/?https%3a%2f%2f" + url)
-	with open("./../Cypher/cage/data.json", "r") as f:
-		data = json.load(f)
-		f.close()
-	os.remove("./../Cypher/cage/data.json")
-	Scanners(url).start()
-	end = time.time()
-	print(end - start)
-	return render(request, "result.html", { "data": data, "url": url })
+	try:
+		start = time.time()
+		url = request.GET['text']
+		damn = urlparse(url)
+		print(damn)
+		url = url[8:]
+		os.chdir(os.getcwd()+ "/../spidey/")
+		os.system("scrapy crawl stack -a " + "urls=https://builtwith.com/?https%3a%2f%2f" + url)
+		with open("./../Cypher/cage/data.json", "r") as f:
+			data = json.load(f)
+			f.close()
+		os.remove("./../Cypher/cage/data.json")
+		Scanners(damn.netloc, list(data.keys()).pop()).start()
+		end = time.time()
+		print(end - start)
+		return render(request, "result.html", { "data": data, "url": url })
+	except Exception as e:
+		print(e)
+		return HttpResponse("<h2> Something went wrong please check the URL... </h2>")
 
 
 def result2(request):
@@ -50,6 +57,7 @@ def vulnrecord(request):
 	with open('../Cypher/cage/vul.json', 'r') as fi:
 		data = json.load(fi)
 		fi.close()
+	os.remove('../Cypher/cage/vul.json')
 	return render(request, "va.html", data)
 
 

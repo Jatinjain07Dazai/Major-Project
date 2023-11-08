@@ -1,0 +1,311 @@
+{
+    "Analytics and Tracking": [
+        [
+            "Hotjar",
+            "A heatmap, survey, feedback and funnel application."
+        ],
+        [
+            "Google Optimize 360",
+            "Test different variations of a website and then tailor it to deliver a personalized experience that works best for each customer and for your business."
+        ],
+        [
+            "Facebook Domain Insights",
+            "This website contains tracking information that allows admins to see Facebook Insights out of Facebook to this domain."
+        ],
+        [
+            "Google Analytics",
+            "Google Analytics offers a host of compelling features and benefits for everyone from senior executives and advertising and marketing professionals to site owners and content developers."
+        ],
+        [
+            "Google Universal Analytics",
+            "The analytics.js JavaScript snippet is a new way to measure how users interact with your website. It is similar to the previous Google tracking code, ga.js, but offers more flexibility for developers to customize their implementations."
+        ],
+        [
+            "Google Analytics 4",
+            "Google Analytics 4 formerly known as App + Web is a new version of Google Analytics that was released in October 2020."
+        ],
+        [
+            "New Relic",
+            "New Relic is a dashboard used to keep an eye on application health and availability while monitoring real user experience."
+        ],
+        [
+            "Global Site Tag",
+            "Google's primary tag for Google Measurement/Conversion Tracking, Adwords and DoubleClick."
+        ],
+        [
+            "Fastly",
+            "Real-time Analytics and CDN platform. Analyze your web and server traffic patterns in real-time."
+        ],
+        [
+            "Fathom Analytics",
+            "Websites stats without tracking or storing personal data of your users."
+        ]
+    ],
+    "Widgets": [
+        [
+            "Ably Realtime",
+            "Ably is a realtime data delivery platform providing developers tools to manage complex projects."
+        ],
+        [
+            "Detectify",
+            "Website vulnerability scanner."
+        ],
+        [
+            "Slack",
+            "Messaging app for teams that makes working together simple and efficient."
+        ],
+        [
+            "Google Font API",
+            "The Google Font API helps you add web fonts to any web page."
+        ],
+        [
+            "TurboLinks",
+            "Turbolinks is a recompilation speed up tool for Ruby on Rails."
+        ],
+        [
+            "Google Tag Manager",
+            "Tag management that lets you add and update website tags without changes to underlying website code."
+        ],
+        [
+            "US Privacy User Signal Mechanism",
+            "The US Privacy API (USP API) is a lightweight API used to communicate signals represented in the US Privacy String."
+        ],
+        [
+            "CrUX Dataset",
+            "CrUX is a data collection system that gathers information about how real users interact with websites. This website is included in the user experiences data gathered from Google Chrome and thus considered sufficiently popular on the Internet."
+        ],
+        [
+            "CrUX Top 100k",
+            "Relative measure of site popularity within the CrUX dataset, measured by the total number of navigations on the origin. This site is in the top 100k."
+        ],
+        [
+            "Cloudflare Radar",
+            "The website appears on the Cloudflare Radar Top 1m sites list"
+        ],
+        [
+            "Cloudflare Radar Top 50k",
+            "The website appears in the Cloudflare Radar Top 50,000."
+        ]
+    ],
+    "Frameworks": [
+        [
+            "Ruby on Rails Token",
+            "Ruby on Rails is an open-source web framework that is optimized for programmer happiness and sustainable productivity. Note that Ruby on Rails has two detection techniques and this is one of them."
+        ],
+        [
+            "Ruby on Rails",
+            "Ruby on Rails is an open-source web framework that is optimized for programmer happiness and sustainable productivity."
+        ]
+    ],
+    "Content Delivery Network": [
+        [
+            "Content Delivery Network",
+            "This page contains links that give the impression that some of the site contents are stored on a content delivery network."
+        ]
+    ],
+    "Mobile": [
+        [
+            "Mobile Non Scaleable Content",
+            "This content is formatted for mobile devices, it does not allow the content to be scaled."
+        ],
+        [
+            "Viewport Meta",
+            "This page uses the viewport meta tag which means the content may be optimized for mobile content."
+        ],
+        [
+            "IPhone / Mobile Compatible",
+            "The website contains code that allows the page to support IPhone / Mobile Content."
+        ],
+        [
+            "Apple Mobile Web Clips Icon",
+            "This page contains an icon for iPhone, iPad and iTouch devices."
+        ]
+    ],
+    "Payment": [
+        [
+            "Japanese Yen",
+            "The website uses the \u00a5 symbol on its website - meaning it may accept payment in this Japanese currency."
+        ],
+        [
+            "Pound Sterling",
+            "The website uses the \u00a3 symbol on its website - meaning it may accept payment in this British currency."
+        ],
+        [
+            "Euro",
+            "The website uses the \u20ac symbol on its website - meaning it may accept payment in Euros."
+        ]
+    ],
+    "Content Management System": [
+        [
+            "KaTeX",
+            "Math typesetting library for the web."
+        ],
+        [
+            "Webflow",
+            "Webflow is a website builder for designing custom, professional websites without code."
+        ]
+    ],
+    "JavaScript Libraries and Functions": [
+        [
+            "Sentry",
+            "JavaScript bug tracking software through Sentry's javascript client Raven."
+        ],
+        [
+            "jQuery",
+            "JQuery is a fast, concise, JavaScript Library that simplifies how you traverse HTML documents, handle events, perform animations, and add Ajax interactions to your web pages. jQuery is designed to change the way that you write JavaScript."
+        ],
+        [
+            "jQuery 3.5.1",
+            "jQuery version 3.5.1"
+        ],
+        [
+            "html5shiv",
+            "HTML5 IE enabling script shim."
+        ],
+        [
+            "Webpack",
+            "webpack takes modules with dependencies and generates static assets representing those modules."
+        ],
+        [
+            "core-js",
+            "Modular standard library for JavaScript."
+        ],
+        [
+            "Google Hosted Libraries",
+            "Google Hosted Libraries is a globally available content distribution network for the most popular, open-source JavaScript libraries."
+        ],
+        [
+            "Google Hosted Web Font Loader",
+            "Web Font Loader hosted at Google."
+        ],
+        [
+            "WebFont Loader",
+            "WebFont Loader gives you added control when using linked fonts via @font-face, from Typekit."
+        ],
+        [
+            "Underscore.js",
+            "Underscore is a utility-belt library for JavaScript that provides functional programming support."
+        ]
+    ],
+    "Advertising": [
+        [
+            "DoubleClick.Net",
+            "DoubleClick enables agencies, marketers and publishers to work together successfully and profit from their digital marketing investments."
+        ]
+    ],
+    "Verified Link": [
+        [
+            "Careers",
+            "The website contains a link to a careers / job opportunities / work with us style page."
+        ],
+        [
+            "Twitter",
+            "The website mentions twitter.com in some form."
+        ],
+        [
+            "LinkedIn",
+            "The website mentions linkedin.com in some form."
+        ],
+        [
+            "GitHub",
+            "The website mentions github.com in some form."
+        ],
+        [
+            "API Developer",
+            "This website contains a link to an API or Developer page."
+        ]
+    ],
+    "Email Hosting Providers": [
+        [
+            "SparkPost",
+            "Transaction email provider from messaging systems."
+        ],
+        [
+            "SendinBlue",
+            "Marketing campaigns, Transactional Emails, and SMS messages all in one platform."
+        ],
+        [
+            "Zendesk",
+            "Organize, prioritize and engage with others on support requests."
+        ],
+        [
+            "Google Apps for Business",
+            "Web-based email, calendar, and documents for teams. Renamed to Google Apps for Work, but now known as G Suite from Google Cloud."
+        ],
+        [
+            "SPF",
+            "The Sender Policy Framework is an open standard specifying a technical method to prevent sender address forgery."
+        ],
+        [
+            "DMARC",
+            "A technical specification created by a group of organizations that want to help reduce the potential for email-based abuse"
+        ]
+    ],
+    "Web Hosting Providers": [
+        [
+            "Amazon",
+            "This site is hosted on Amazon AWS EC2 Infrastructure."
+        ],
+        [
+            "Amazon Virginia Region",
+            "Amazon Hosted EC2 Instances in Virginia"
+        ],
+        [
+            "Cloudflare Hosting",
+            "Supercharged web hosting service."
+        ],
+        [
+            "Google Cloud",
+            "Website hosted on Google Cloud Platform - includes Google Compute Engine."
+        ]
+    ],
+    "SSL Certificates": [
+        [
+            "Cloudflare SSL",
+            "SSL solutions from Cloudflare"
+        ],
+        [
+            "SSL by Default",
+            "The website redirects traffic to an HTTPS/SSL version by default."
+        ]
+    ],
+    "Name Server": [
+        [
+            "Cloudflare DNS",
+            "DNS services provided by Cloudflare."
+        ]
+    ],
+    "Operating Systems and Servers": [
+        [
+            "IPv6",
+            "The website has an IPv6 record."
+        ]
+    ],
+    "Web Servers": [
+        [
+            "Varnish",
+            "Varnish is a web accelerator / reverse proxy caching server."
+        ]
+    ],
+    "Verified CDN": [
+        [
+            "Amazon S3 CDN",
+            "Amazon S3 is storage for the Internet. It is designed to make web-scale computing easier for developers."
+        ],
+        [
+            "Cloudflare CDN",
+            "Content owned by this site hosted on the Cloudflare CDN."
+        ],
+        [
+            "Google Cloud CDN",
+            "Delivers content over Google's distributed edge caching infrastructure."
+        ]
+    ],
+    "Web Master Registration": [
+        [
+            "Google Webmaster",
+            "Webmaster tools provide you with a free and easy way to make your site more Google-friendly."
+        ]
+    ],
+    "BuiltWith Top Site Rank": []
+}

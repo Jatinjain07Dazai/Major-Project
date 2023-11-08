@@ -7,9 +7,9 @@ class VulscanSpider(scrapy.Spider):
     allowed_domains = ["nvd.nist.gov"]
     start_urls = ["https://nvd.nist.gov/", "https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=Python&search_type=all&isCpeNameSearch=false"]
 
-    # def __init__(self, urls=[], *args, **kwargs):
-    #     self.start_urls = urls.split(',')
-    #     super(VulscanSpider, self).__init__(*args, **kwargs)
+    def __init__(self, urls=[], *args, **kwargs):
+        self.start_urls = urls.split(',')
+        super(VulscanSpider, self).__init__(*args, **kwargs)
 
     def parse(self, response):
         records = []
@@ -29,8 +29,20 @@ class VulscanSpider(scrapy.Spider):
             }
             records.append(block)
             j += 1
+        print(os.getcwd())
 
-        with open('../../Cypher/cage/vul.json', "w") as f:
-            json.dump({'v': records}, f, indent = 4)
+        if os.path.exists('../Cypher/cage/vul.json'):
+            with open('../Cypher/cage/vul.json', 'r') as fi:
+                old_data = json.load(fi)
+                newdata = records + old_data['v']
+                fi.close()
+            with open('../Cypher/cage/vul.json', 'w') as gi:
+                json.dump({'v': newdata }, gi, indent = 4)
+                gi.close()
+        else:
+            with open('../Cypher/cage/vul.json', "w") as f:            
+                json.dump({'v': records}, f, indent = 4)
+                f.close()
+
 
         yield scrapy.Request()

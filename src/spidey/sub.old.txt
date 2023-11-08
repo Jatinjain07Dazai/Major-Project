@@ -1,0 +1,8 @@
+cpanel.techwithtim.net
+www.techwithtim.net
+autodiscover.techwithtim.net
+techwithtim.net
+webmail.techwithtim.net
+discord.techwithtim.net
+mail.techwithtim.net
+webdisk.techwithtim.net

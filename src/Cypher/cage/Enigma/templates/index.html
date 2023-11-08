@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta id="res" data-result={{answer}}>
+  <title>Test</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  <div class="container">
+    <div class="icons-container">
+      <div class="h1-wrapper">
+        <h1>SPECTOR</h1>
+      </div>
+    </div>
+    <div id="info" hidden >{% if answer %} 
+                    {{ answer }}
+                    {% endif %}
+    </div>
+    <div class="dialog-box" > 
+      <div>{{ question }}</div>
+    </div>
+    <div class="bottom-section">
+      <form action="/ask" method="post" id="prompt">
+        <label for="search">Ask a Question :</label>
+        <input id="search" type="text" name="question" placeholder="Enter Your Query..." autofocus required />
+        <input type="submit" name="sub" value="Ask" class="ask-button">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
